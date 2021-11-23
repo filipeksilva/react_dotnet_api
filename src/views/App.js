@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
+import Header from './shared/Header';
 import Body from './Body';
-import Footer from './Footer';
+import Footer from './shared/Footer';
 
 function App() {
   return (

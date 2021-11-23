@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Body extends Component {
   render() {
@@ -15,11 +16,11 @@ class Body extends Component {
                   A prática cotidiana prova que a necessidade de renovação processual prepara-nos para enfrentar situações atípicas decorrentes das formas de ação.
                 </p>
 
-                <div className="d-flex flex-column flex-md-row">
-                  <a href="/" className="btn btn-lg btn-bd-primary mb-3 me-md-3">Cadastrar clientes</a>
+                <div className="d-flex flex-column flex-md-row">                  
+                  <Link className="btn btn-lg btn-bd-primary mb-3 me-md-3" to="/clientes">Cadastrar clientes</Link>
                 </div>
                 <p className="text-muted mb-0">
-                  Versão 0.0.1
+                  Versão v0.0.1
                 </p>
               </div>
             </div>
