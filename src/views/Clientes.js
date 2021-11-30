@@ -27,7 +27,7 @@ class Clientes extends Component {
                 <div className="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
                 </div>
                 <div className="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
-                  <h1 className="mb-3">Lista de Clientes - {this.state.clientes.length}</h1>
+                  <h1 className="mb-3">Lista de Clientes - {this.state.clientes.length} </h1>
                   <table className="table">
                     <tr>                      
                       <th>Nome</th>
