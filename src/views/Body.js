@@ -11,7 +11,7 @@ class Body extends Component {
               <div className="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
               </div>
               <div className="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
-                <h1 className="mb-3">React.JS</h1>
+                <h1 className="mb-3">React.JS 2021</h1>
                 <p className="lead mb-4">
                   Aplicação desenvolvida utilizando a biblioteca React.JS
                 </p>
