@@ -41,7 +41,7 @@ class Clientes extends Component {
                           <td>{cliente.nome}</td>
                           <td>{cliente.telefone}</td>
                           <td>{cliente.endereco}</td>
-                          <td><Link to={`/clientes/${cliente.id}`}>Editar</Link></td>                         
+                          <td><Link to={`/cliente/${cliente.id}`}>Editar</Link></td>                         
                         </tr>                        
                       ))
                     }
