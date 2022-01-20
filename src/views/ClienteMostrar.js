@@ -9,7 +9,7 @@ class ClienteMostrar extends Component {
       "id": 0,
       "nome": "",
       "telefone": "",
-      "endereco": ""
+      "endereco": "",
     }
   }
 
@@ -27,13 +27,14 @@ class ClienteMostrar extends Component {
       })
     }
     else{
-      axios.post(`https://localhost:5001/clientes`, this.state.cliente).then(response => {           
+      axios.post(`https://localhost:5001/clientes`, cliente).then(response => {           
         this.props.history.push("/clientes")
       })
     }  
   }
 
   salvar2 = () => {
+    debugger
     if(this.state.cliente.id > 0){
       axios.put(`https://localhost:5001/clientes/${this.state.cliente.id}`, this.state.cliente).then(response => {           
         //window.location.href = "/clientes"
@@ -66,7 +67,7 @@ class ClienteMostrar extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-12 mx-auto col-md-8 ">
-                  <h1 className="mb-3">Mostrando cliente</h1>
+                  <h1 className="mb-3">Cliente</h1>
                   <hr/>
                   <form>
                     <div className="form-group">
@@ -81,13 +82,13 @@ class ClienteMostrar extends Component {
                       <label htmlFor="endereco">Endereço</label>
                       <input type="text" className="form-control" id="endereco" name="endereco" value={this.state.cliente.endereco} onChange={this.onChange} placeholder="Digite o endereco"/>
                     </div>
-                    <button type="button" onClick={() => { this.salvar(this.state.cliente) }} className="btn btn-primary">Salvar</button>
+                    <button type="button" onClick={this.salvar2} className="btn btn-primary">Salvar</button>
                   </form>
                 </div>              
               </div>
               <hr/>
-              <div classNameName="col-md-12 order-md-1 text-center text-md-left pr-md-5">                                  
-                  <p classNameName="text-muted mb-0">
+              <div className="col-md-12 order-md-1 text-center text-md-left pr-md-5">                                  
+                  <p className="text-muted mb-0">
                     Versão v0.0.1
                   </p>
                 </div>

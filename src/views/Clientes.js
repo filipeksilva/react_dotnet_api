@@ -49,7 +49,7 @@ class Clientes extends Component {
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody> 
                       {
                         this.state.clientes.map((cliente, index) => (
                           <tr key={index}>                                                    
