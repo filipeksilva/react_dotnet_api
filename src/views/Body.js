@@ -17,9 +17,9 @@ class Body extends Component {
                 </p>
 
                 <div className="d-flex flex-column flex-md-row">                  
-                  <Link className="btn btn-lg btn-bd-secondary mb-3 me-md-3 bg-secondary" to="/clientes">Cadastrar Clientes</Link>
+                  <Link className="btn btn-outline-secondary" to="/clientes">Cadastrar Clientes</Link>
                 </div>
-                <p className="text-muted mb-0">
+                <p style={{marginTop: "30px"}} className="text-muted mb-0">
                   Versão v0.1.1
                 </p>
               </div>

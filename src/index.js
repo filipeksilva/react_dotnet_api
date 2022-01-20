@@ -7,15 +7,16 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Clientes from './views/Clientes';
 import Pagina404 from './views/Pagina404';
-import ClienteMostrar from './views/ClienteMostrar';
+import ClienteNovo from './views/ClienteNovo';
+import ClienteEditar from './views/ClienteEditar';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact={true} component={App} />
       <Route path="/clientes" component={Clientes} />      
-      <Route path="/cliente/novo" component={ClienteMostrar} />
-      <Route path="/cliente/:id" component={ClienteMostrar} />
+      <Route path="/cliente/novo" component={ClienteNovo} />
+      <Route path="/cliente/:id" component={ClienteEditar} />
       <Route path='*' component={Pagina404} />
     </Switch>
   </BrowserRouter>,
