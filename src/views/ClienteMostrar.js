@@ -67,7 +67,7 @@ class ClienteMostrar extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-12 mx-auto col-md-8 ">
-                  <h1 className="mb-3">Cliente</h1>
+                  <h1 className="mb-3">Mostrando Cliente</h1>
                   <hr/>
                   <form>
                     <div className="form-group">
