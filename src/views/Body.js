@@ -11,16 +11,16 @@ class Body extends Component {
               <div className="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
               </div>
               <div className="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
-                <h1 className="mb-3">React.JS 2021</h1>
+                <h1 className="mb-3">Sistema de Cadastro</h1>
                 <p className="lead mb-4">
-                  Aplicação desenvolvida utilizando a biblioteca React.JS
+                  Armazenamento de dados cadastrais
                 </p>
 
                 <div className="d-flex flex-column flex-md-row">                  
-                  <Link className="btn btn-lg btn-bd-primary mb-3 me-md-3" to="/clientes">Cadastrar clientes</Link>
+                  <Link className="btn btn-lg btn-bd-secondary mb-3 me-md-3 bg-secondary" to="/clientes">Cadastrar Clientes</Link>
                 </div>
                 <p className="text-muted mb-0">
-                  Versão v0.0.1
+                  Versão v0.1.1
                 </p>
               </div>
             </div>

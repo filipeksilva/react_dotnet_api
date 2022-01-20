@@ -89,7 +89,7 @@ class ClienteMostrar extends Component {
               <hr/>
               <div className="col-md-12 order-md-1 text-center text-md-left pr-md-5">                                  
                   <p className="text-muted mb-0">
-                    Versão v0.0.1
+                    Versão v0.1.1
                   </p>
                 </div>
 

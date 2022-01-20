@@ -16,7 +16,7 @@ class Pagina404 extends Component {
                 <div className="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
                   <h1 className="mb-3">Ops... Página não encontrada!</h1>                 
                   <p className="text-muted mb-0">
-                    Versão v0.0.1
+                    Versão v0.1.1
                   </p>
                 </div>
               </div>

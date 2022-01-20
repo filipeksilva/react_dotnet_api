@@ -66,8 +66,9 @@ class Clientes extends Component {
                     </tbody>
                   </table>
                   <Link className="btn btn-primary" to={`/cliente/novo`}>Novo</Link>
+                  <Link style={{marginLeft: "15px"}} className="btn btn-secondary" to={`/`}>Voltar</Link>
                   <p style={{marginTop: "30px"}} className="text-muted mb-0">
-                    Versão v0.0.1
+                    Versão v0.1.1
                   </p>
                 </div>
               </div>

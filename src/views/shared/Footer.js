@@ -24,6 +24,7 @@ class Footer extends Component {
               <ul className="list-unstyled">
                 <li className="mb-2"><a href="/">Home</a></li>
                 <li className="mb-2"><a href="/clientes">Clientes</a></li>
+                <li className="mb-2"><a href="/produtos">Produtos</a></li>
               </ul>
             </div>
 

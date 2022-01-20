@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom'
 class Header extends Component {
   render() {
     return (
-      <header className="navbar navbar-expand-md navbar-dark bd-navbar">
+      <header className="navbar navbar-expand-md navbar-dark bd-navbar bg-dark ">
         <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"></link>
         <link href="https://getbootstrap.com/docs/5.1/assets/css/docs.css" rel="stylesheet"></link>
         <nav className="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">          
@@ -27,6 +27,9 @@ class Header extends Component {
               </li>
               <li className="nav-item col-6 col-md-auto">
                 <NavLink className="nav-link" activeClassName="active" exact to="/clientes">Clientes</NavLink>
+              </li>
+              <li className="nav-item col-6 col-md-auto">
+                <NavLink className="nav-link" activeClassName="active" exact to="/produtos">Produtos</NavLink>
               </li>
             </ul>
 
