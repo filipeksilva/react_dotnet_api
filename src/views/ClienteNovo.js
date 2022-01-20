@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Header from './shared/Header';
 import Footer from './shared/Footer';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-class ClienteMostrar extends Component {
+class ClienteNovo extends Component {
   state = {
     cliente: {
       "id": 0,
@@ -67,7 +68,7 @@ class ClienteMostrar extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-12 mx-auto col-md-8 ">
-                  <h1 className="mb-3">Mostrando Cliente</h1>
+                  <h1 className="mb-3">Novo Cliente</h1>
                   <hr/>
                   <form>
                     <div className="form-group">
@@ -83,6 +84,7 @@ class ClienteMostrar extends Component {
                       <input type="text" className="form-control" id="endereco" name="endereco" value={this.state.cliente.endereco} onChange={this.onChange} placeholder="Digite o endereco"/>
                     </div>
                     <button type="button" onClick={this.salvar2} className="btn btn-primary">Salvar</button>
+                    <Link style={{marginLeft: "15px"}} className="btn btn-secondary" to={`/clientes`}>Voltar</Link>
                   </form>
                 </div>              
               </div>
@@ -102,4 +104,4 @@ class ClienteMostrar extends Component {
   }
 }
 
-export default ClienteMostrar;
+export default ClienteNovo
