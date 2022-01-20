@@ -38,7 +38,7 @@ class Clientes extends Component {
               <div className="row align-items-lg-center">
                 <div className="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
                 </div>
-                <div className="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
+                <div className="col-md-12 order-md-1 col-lg-10 text-center text-md-start">
                   <h1 className="mb-3">Lista de Clientes - {this.state.clientes.length} </h1>
                   <table className="table">
                     <thead>
@@ -56,9 +56,9 @@ class Clientes extends Component {
                             <td>{cliente.nome}</td>
                             <td>{cliente.telefone}</td>
                             <td>{cliente.endereco}</td>
-                            <td><Link to={`/cliente/${cliente.id}`} className="btn btn-primary">Editar</Link></td>
                             <td>
-                              <button className="btn btn-danger" onClick={() => {this.excluir(cliente)}}>Excluir</button>
+                              <Link to={`/cliente/${cliente.id}`} className="btn btn-primary">Editar</Link>
+                              <button style={{marginLeft: "10px"}} className="btn btn-danger" onClick={() => {this.excluir(cliente)}}>Excluir</button>
                             </td> 
                           </tr>                        
                         ))
@@ -66,7 +66,7 @@ class Clientes extends Component {
                     </tbody>
                   </table>
                   <Link className="btn btn-primary" to={`/cliente/novo`}>Novo</Link>
-                  <Link style={{marginLeft: "15px"}} className="btn btn-secondary" to={`/`}>Voltar</Link>
+                  <Link style={{marginLeft: "10px"}} className="btn btn-secondary" to={`/`}>Voltar</Link>
                   <p style={{marginTop: "30px"}} className="text-muted mb-0">
                     Versão v0.1.1
                   </p>

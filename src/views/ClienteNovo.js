@@ -73,18 +73,18 @@ class ClienteNovo extends Component {
                   <form>
                     <div className="form-group">
                       <label htmlFor="nome">Nome</label>
-                      <input type="text" className="form-control" id="nome" name="nome" value={this.state.cliente.nome} onChange={this.onChange} placeholder="Digite o nome"/>
+                      <input style={{marginBottom: "10px"}} type="text" className="form-control" id="nome" name="nome" value={this.state.cliente.nome} onChange={this.onChange} placeholder="Digite o nome"/>
                     </div>
                     <div className="form-group">
                       <label htmlFor="telefone">Telefone</label>
-                      <input type="text" className="form-control" id="telefone" name="telefone" value={this.state.cliente.telefone} onChange={this.onChange} placeholder="Digite o telefone"/>
+                      <input style={{marginBottom: "10px"}} type="text" className="form-control" id="telefone" name="telefone" value={this.state.cliente.telefone} onChange={this.onChange} placeholder="Digite o telefone"/>
                     </div>
                     <div className="form-group">
                       <label htmlFor="endereco">Endereço</label>
-                      <input type="text" className="form-control" id="endereco" name="endereco" value={this.state.cliente.endereco} onChange={this.onChange} placeholder="Digite o endereco"/>
+                      <input style={{marginBottom: "10px"}} type="text" className="form-control" id="endereco" name="endereco" value={this.state.cliente.endereco} onChange={this.onChange} placeholder="Digite o endereco"/>
                     </div>
                     <button type="button" onClick={this.salvar2} className="btn btn-primary">Salvar</button>
-                    <Link style={{marginLeft: "15px"}} className="btn btn-secondary" to={`/clientes`}>Voltar</Link>
+                    <Link style={{marginLeft: "10px"}} className="btn btn-secondary" to={`/clientes`}>Voltar</Link>
                   </form>
                 </div>              
               </div>
